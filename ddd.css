@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(148, 39, 173, 0.8), rgba(239, 204, 0, 0.8), rgba(66, 165, 245, 0.8));
+    animation: moveBackground 20s linear infinite;
+  }
+  
+  @keyframes moveBackground {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  p {
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .mission-vision {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  
+  .mission,
+  .vision {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: #f1c40f;
+    color: #333;
+    margin-right: 1rem;
+  }
+  
+  .objectives {
+    margin-top: 2rem;
+  }
+  
+  .objective {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  
